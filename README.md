@@ -1,2 +1,2 @@
 # techdegree-projects
-techdegree-projects
+treehouse-techdegree-projects
