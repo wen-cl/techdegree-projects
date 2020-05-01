@@ -86,12 +86,12 @@ header .profile-image:hover {
 }
 .experience {
   margin-top: 60px;
-  padding-left: 10px;
-  width: 300px;
-  height: 300px;
+  padding: 5px;
+  width: 500px;
   background: #f0f5f5;
+  flex-direction: column;
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 1),
               inset 3px 3px 5px rgba(0, 0, 0, 0.1);
@@ -124,7 +124,7 @@ ul.skills {
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
+  background: #cd48e7;
   color: white;
   padding: 5px 10px;
   margin: 2px;
