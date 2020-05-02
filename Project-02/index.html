@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/styles.css">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine"> -->
     <title>My Responsive Layout Project</title>
 </head>
 <body>
-    <header>
-        <h1>Student Name</h1>
-        <div class="container">
+    <header class="group">
+        <div class="container group">
+            <h1>Wen Chien, Lee</h1>
             <nav>
-                <ul>
+                <ul class="group">
                     <li><a href="#">HOME</a></li>
                     <li><a href="#portfolio">PORTFOLIO</a></li>
                     <li><a href="#contact">CONTACT</a></li>
@@ -22,7 +23,7 @@
         <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
     </header>
     <main>
-        <div class="portfolio" id="portfolio">
+        <div class="container group" id="portfolio">
             <h2>PORTFOLIO</h2>
             <article>
                 <img src="images/portfolio-1.png" alt="Marketing Page Image">
@@ -59,13 +60,22 @@
     </main>
     <footer class="group">
         <div class="contact" id="contact">
-            <h3>CONTACT</h3>
-            <p>If you're interrested in chatting or want more information about what I've been working on , I'd love to hear from you!</p>
-            <p>Phone : <strong>+65 888388822</strong></p>
-            <p>Email : <strong>leewenchien@gmail.com</strong></p>
+            <div>
+                <h3>CONTACT</h3>
+                <p>If you're interrested in chatting or want more information about what I've been working on , I'd love to hear from you!</p>
+                <p>Phone : <strong>+65 888388822</strong></p>
+                <p>Email : <strong>leewenchien@gmail.com</strong></p>
+            </div>
         </div>
-        <h3 id="name"><strong>Student Name</strong></h2>
-        <h3 id="nav-top"><a href="#top"><strong>Back to Top</strong></a></h2>
+        <h3 id="name"><strong>Wen Chien, Lee</strong></h3>
+        <h3 id="nav-top"><a href="#top"><strong>Back to Top</strong></a></h3>
+        <nav id="footer-nav">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
     </footer>
 </body>
 </html>

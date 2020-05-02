@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;523;600;700;800&display=swap');
+
 /*Base Style*/
 * {
     text-align: center;
+    color: #34495E;
+}
+
+body {
+    font-family: 'Manrope', sans-serif, serif;
+    /* font-size: 48px; */
 }
 
 p {
@@ -8,6 +16,8 @@ p {
 }
 
 img {
+    box-sizing: border-box;
+    padding: 5px;
     width: 100%;
     height: auto;
 }
@@ -42,7 +52,6 @@ header {
     margin-top: 5px;
     margin-bottom: 10px;
     padding: 10px;
-    /* color: #707B7C; */
 }
 
 footer {
@@ -67,12 +76,120 @@ div.contact {
     padding: 5px;
 }
 
+#footer-nav li {
+    display: none;
+}
+
 .group:after {
     content: "";
     display: table;
     clear: both;
 }
 
+@media (min-width: 768px) {
+
+    .container h1 {
+        margin-left: 5px;
+    }
+
+    .container li {
+        display: inline-block;
+        background-color: #E0E0E0;
+    }
+
+    header img {
+        float: right;
+        width: 30%;
+        margin-right: 5px;
+    }
+
+    header p {
+        float: left;
+        width: 60%;
+        margin-left: 5px;
+    }
+
+    article:nth-child(odd) {
+        width: 50%;
+        float: right;
+    }
+
+    article:nth-child(even) {
+        width: 50%;
+        float: left;
+    }
+
+    .contact div {
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    #footer-nav {
+        float: right;
+    }
+
+    #footer-nav li{
+        display: inline-block;
+        padding-right: 10px;
+        padding-left: 5px;
+        /* background-color: #E0E0E0; */
+    }
+
+    #footer-nav ul {
+        margin-top: 23px;
+    }
+
+    #nav-top {
+        display: none;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    body {
+        background-color: #E0E0E0; 
+    }
+
+    main {
+        background-color: white;
+        padding-top: 10px;
+    }
+
+    .container h1 {
+        margin-left: 5px;
+    }
+
+    .container h1 {
+        float: left;
+        margin-top: 25px;
+    }
+
+    .container nav {
+        float: right;
+    }
+
+    header img {
+        display: inline-block;
+        width: 35%;
+        margin-right: 10px;
+    }
+
+    header p {
+        display: inline-block;
+        width: 50%;
+        margin-left: 10px;
+    }
+
+    .container li {
+        display: inline-block;
+    }
+
+    .container article {
+        width: 33.33%;
+        float: left;
+    }
+}
 
 
 
