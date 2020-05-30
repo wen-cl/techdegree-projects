@@ -1,0 +1,23 @@
+// ======================================
+//  Mixins
+// ======================================
+
+@mixin mq($breakpoint) {
+    @media (min-width: $breakpoint) {
+        @content;
+    }
+}
+
+@mixin grid-themes ($color-map) {
+    @each $number, $color in $color-map {
+        &-#{$number}{
+            @include mq($breakpoint) {
+                flex-basis: flexBasisCalc($number);
+            }
+    
+            @at-root .theme#{&} {
+                background-color: $color;
+            }
+        }
+    }
+}

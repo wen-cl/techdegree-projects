@@ -1,0 +1,180 @@
+/* ============================================= */
+/*              Grid System                      */
+/* ============================================= */
+
+  .container {
+    padding: 0 10px;
+    @include mq($breakpoint) {
+      max-width: $max-width;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 10px;
+    @include mq($breakpoint) {
+      flex-direction: row;
+    }
+  }
+
+  .centered {
+    @include mq($breakpoint) {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  [class^=col] {
+    margin-top: 10px;
+    flex-basis: 100%;
+    min-height: 25px;
+    padding: 10px;
+    border-radius: 5px;
+
+
+    @include mq($breakpoint) {
+      display: flex;
+      justify-content: center;
+      margin-top: 0;
+      align-items: center;
+
+      & + & {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .col {
+    @include grid-themes ($color-themes);
+  }
+  
+  // .col-1 {
+  //   @include mq($breakpoint) {
+  //     flex-basis: 8.33%;
+  //   }
+
+  //   @at-root .theme#{&} {
+  //     background-color: #927bc1;
+  //   }
+  // }
+
+  
+  // .col-2 {
+  //   @include mq($breakpoint) {
+  //     flex-basis: 16.67%;
+  //   }
+  
+  //   @at-root .theme#{&} {
+  //     background-color: #fd7856;
+  //   }
+  // }
+  
+  // .col-3 {
+  //   @include mq($breakpoint) {
+  //     flex-basis: 25.00%;
+  //   }
+    
+  //   @at-root .theme#{&} {
+  //     background-color: #deb2ee;
+  //   }
+  // }
+
+
+  // .col-4 {
+  //   @include mq($breakpoint) {
+  //     flex-basis: 33.33%;
+  //   }
+
+  //   @at-root .theme#{&} {
+  //     background-color: #7ee6fd;
+  //   }
+  // }
+
+  // .col-5 {
+  //   @include mq($breakpoint) {
+  //     flex-basis: 41.67%;
+  //   }
+
+  //   @at-root .theme#{&} {
+  //     background-color: #88d9a0;
+  //   }
+  // }
+  
+  // .col-6 {
+  //   @include mq($breakpoint) {
+  //     flex-basis: 50.00%;
+  //   }
+
+  //   @at-root .theme#{&} {
+  //     background-color: #4da2bb;
+  //   }
+  // }
+  
+  // .col-7 {
+  //   @include mq($breakpoint) {
+  //     flex-basis: 58.33%;
+  //   }
+
+  //   @at-root .theme#{&} {
+  //     background-color: #fd7856;
+  //   }
+  // }
+  
+  // .col-8 {
+  //   @include mq($breakpoint) {
+  //     flex-basis: 66.67%;
+  //   }
+
+  //   @at-root .theme#{&} {
+  //     background-color: #fd9f85;
+  //   }
+  // }
+  
+  // .col-9 {
+  //   @include mq($breakpoint) {
+  //     flex-basis: 75.00%;
+  //   }
+
+  //   @at-root .theme#{&} {
+  //     background-color: #e4757a;
+  //   }
+  // }
+  
+  // .col-10 {
+  //   @include mq($breakpoint) {
+  //     flex-basis: 83.33%;
+  //   }
+
+  //   @at-root .theme#{&} {
+  //     background-color: #63cc82;
+  //   }
+  // }
+  
+  // .col-11 {
+  //   @include mq($breakpoint) {
+  //     flex-basis: 91.67%;
+  //   }
+
+  //   @at-root .theme#{&} {
+  //     background-color: #51ddfc;
+  //   }
+  // }
+
+  // .col-12 {
+  //   @include mq($breakpoint) {
+  //     flex-basis: 100%;
+  //   }
+
+  //   @at-root .theme#{&} {
+  //     background-color: #80e8d1;
+  //   }
+  // }
+  
+  .card {
+    flex-basis: 100%;
+  }
