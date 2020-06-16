@@ -17,7 +17,6 @@ input {
     width: 80%;
     display: flex;
     justify-content: space-evenly;
-    align-items: right;
     flex-wrap: wrap;
 }
 
